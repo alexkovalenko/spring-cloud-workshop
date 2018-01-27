@@ -1,0 +1,9 @@
+spring:
+  cloud:
+    config:
+      name: limits-service
+      uri: http://localhost:8081
+
+management:
+  security:
+    enabled: false

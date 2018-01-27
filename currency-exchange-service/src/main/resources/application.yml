@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: currency-exchange-service
+  h2:
+    console:
+      enabled: true
+  jpa:
+    hibernate:
+      ddl-auto: create
+  zipkin:
+    sender:
+      type: web
+
+server:
+  port: 8082
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:9090/eureka/
+
+
